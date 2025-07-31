@@ -1,0 +1,58 @@
+# === GLOBAL ===
+*.log
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+.env
+.env.*
+.DS_Store
+*.sqlite3
+.vscode/
+.idea/
+*.swp
+
+# === PYTHON / FLASK BACKEND ===
+backend/instance/
+backend/__pycache__/
+backend/migrations/
+backend/.pytest_cache/
+backend/.venv/
+backend/venv/
+backend/*.db
+backend/*.egg-info/
+backend/dist/
+backend/build/
+
+# If using pipenv
+backend/Pipfile.lock
+
+# If using poetry
+backend/poetry.lock
+backend/*.dist-info/
+
+# === REACT FRONTEND ===
+frontend/node_modules/
+frontend/.env
+frontend/.env.*.local
+frontend/.next/
+frontend/.cache/
+frontend/dist/
+frontend/build/
+frontend/yarn.lock
+frontend/package-lock.json
+frontend/npm-debug.log*
+frontend/.turbo/
+
+# === TEST OUTPUTS ===
+coverage/
+htmlcov/
+.tox/
+.pytest_cache/
+junitxml.xml
+
+# === DEPLOYMENT ===
+*.tar.gz
+*.zip
+*.egg
+*.whl
